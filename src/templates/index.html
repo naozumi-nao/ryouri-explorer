@@ -1,75 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get verified restaurant recommendations"
+    />
+    <meta name="theme-color" content="#664343" />
+    <link rel="manifest" href="./app.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <link rel="apple-touch-icon" href="/icons/xxxhdpi.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bb1a606322.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Ryouri Explorer</title>
-    <link rel="icon" type="image/x-icon" href="./images/icons/favicon.png">
   </head>
 
   <body>
     <a href="#main-content" class="skip-link">Skip to content</a>
     <header>
-      <div class="app-bar">
-        <div class="icon-group">
-          <a href="#" class="app-icon"><img src="./images/icons/appicon.png" alt="Ryouri Explorer"></a>
-          <button id="nav-drawer-btn" aria-label="Open navigation menu"></button>
-        </div>
-        <nav class="dropdown-nav">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#">Favorite</a></li>
-            <li><a href="https://linkedin.com/in/bimaadityokurniawan/" target="_blank">About Us</a></li>
-          </ul>
-        </nav>
-      </div>
-      <section class="hero">
-        <h1 tabindex="0">Your Culinary Journey Starts Here</h1>
-        <p>Discover hidden food gems, explore authentic reviews, and embark on a culinary adventure. Your next favorite dish is just a click away</p>
-      </section>
+      <app-bar></app-bar>
     </header>
 
-    <main id="main-content">
-      <section class="why-us">
-        <h2 tabindex="0">Why Ryouri Explorer?</h2>
-        <div class="why-list">
-          <section class="why-item">
-            <img src="./images/heros/chef.jpg" alt="Picture of a chef preparing dessert" />
-            <h3 tabindex="0">Get Expert Insights</h3>
-            <p>
-              Our team of experienced food enthusiasts provides detailed and informative reviews of each restaurant. From the quality of the food to the ambiance and service, we cover everything you need to know before making a reservation.
-            </p>
-          </section>
-          <section class="why-item">
-            <img src="./images/heros/eating.jpg" alt="Picture of people enjoying food and beverages on a table" />
-            <h3 tabindex="0">Discover New Culinary Adventures</h3>
-            <p>
-              Ryouri Explorer is a curated platform designed to introduce you to a diverse range of restaurants and cuisines. Whether you're a seasoned foodie or just starting to explore the world of food, our expert reviews and recommendations will help you find hidden gems and unique dining experiences.
-            </p>
-          </section>
-          <section class="why-item">
-            <img src="./images/heros/time-and-money.jpg" alt="Picture of Time and Money" />
-            <h3 tabindex="0">Save Time and Money</h3>
-            <p>
-              With Ryouri Explorer, you can efficiently search for restaurants that match your preferences and budget. Our user-friendly platform allows you to filter results based on various criteria, such as cuisine, price range, and location. This saves you time and helps you make informed decisions about where to dine.
-            </p>
-          </section>
-        </div>
-      </section>
-
-      <section class="restaurant-list">
-        <h2 tabindex="0">Expert Reviews, Curated Recommendations</h2>
-        <div id="restaurant-list-data"></div>
-      </section>
-    </main>
+    <main id="main-content" tabindex="0"></main>
 
     <footer>
-      <p>
-        Copyright &#169 2024 Ryouri Explorer
-      </p>
-      <p>
-        by Bima Adityo Kurniawan
-      </p>
+      <footer-bar></footer-bar>
     </footer>
   </body>
 </html>
