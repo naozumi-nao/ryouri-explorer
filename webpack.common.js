@@ -1,15 +1,14 @@
-import path from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
-import { CleanWebpackPlugin } from 'clean-webpack-plugin';
-import WorkboxWebpackPlugin from 'workbox-webpack-plugin';
-import ImageminWebpackPlugin from 'imagemin-webpack-plugin';
-import ImageminMozjpeg from 'imagemin-mozjpeg';
-import ImageminPngquant from 'imagemin-pngquant';
-import ImageminWebpWebpackPlugin from 'imagemin-webp-webpack-plugin';
-const __dirname = import.meta.dirname;
+/* eslint-disable no-undef */
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
+const ImageminWebpackPlugin = require('imagemin-webpack-plugin');
+const ImageminMozjpeg = require('imagemin-mozjpeg');
+const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 
-export default {
+module.exports = {
   entry: {
     app: path.resolve(__dirname, 'src/scripts/index.js'),
   },
@@ -79,7 +78,6 @@ export default {
           quality: 50,
           progressive: true,
         }),
-        ImageminPngquant(),
       ],
     }),
 

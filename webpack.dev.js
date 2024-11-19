@@ -1,14 +1,16 @@
-import { merge } from 'webpack-merge';
-import { resolve } from 'path';
-import common from './webpack.common.js';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-const __dirname = import.meta.dirname;
+/* eslint-disable no-undef */
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common.js');
+const path = require('path');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-export default merge(common, {
+module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    static: resolve(__dirname, 'dist'),
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
     watchFiles: ['index.html', 'src/**/*'],
     hot: true,
     open: true,

@@ -1,6 +1,7 @@
-import { defineConfig } from 'cypress';
+/* eslint-disable no-undef */
+const { defineConfig } = require('cypress');
 
-export default defineConfig({
+module.exports = defineConfig({
   e2e: {
     baseUrl: 'http://localhost:9000',
     // eslint-disable-next-line no-unused-vars
