@@ -1,6 +1,7 @@
 import { merge } from 'webpack-merge';
 import { resolve } from 'path';
 import common from './webpack.common.js';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 const __dirname = import.meta.dirname;
 
 export default merge(common, {
@@ -20,4 +21,5 @@ export default merge(common, {
       },
     },
   },
+  plugins: [new BundleAnalyzerPlugin()],
 });

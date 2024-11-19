@@ -3,7 +3,6 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import WorkboxWebpackPlugin from 'workbox-webpack-plugin';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import ImageminWebpackPlugin from 'imagemin-webpack-plugin';
 import ImageminMozjpeg from 'imagemin-mozjpeg';
 import ImageminPngquant from 'imagemin-pngquant';
@@ -56,7 +55,6 @@ export default {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new BundleAnalyzerPlugin(),
 
     new HtmlWebpackPlugin({
       filename: 'index.html',
