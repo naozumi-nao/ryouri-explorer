@@ -1,6 +1,6 @@
 import UrlParser from '../../routes/url-parser.js';
 import RestaurantApiSource from '../../data/remote/restaurant-api-source.js';
-import FavoriteButtonInitiator from '../../utils/favorite-button-initiator.js';
+import FavoriteButtonInitiator from '../../utils/favorite-button-presenter.js';
 import AlertModals from '../../utils/alert-modals.js';
 import DomManipulator from '../../utils/dom-manipulator.js';
 

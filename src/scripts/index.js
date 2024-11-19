@@ -1,5 +1,5 @@
 import 'regenerator-runtime'; /* for async await transpile */
-import '../styles/main.scss';
+import '../styles/minified-main.css';
 import App from './views/app.js';
 import swRegister from './utils/sw-register.js';
 import './components/app-bar.js';
